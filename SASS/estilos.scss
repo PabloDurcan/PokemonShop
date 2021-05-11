@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+@media only screen and (max-width: 1200px) {
+    @mixin container-botones {
+        background: rgb(0, 0, 0);
+        border-radius: 5px;
+        padding: 1rem;
+        margin-bottom: 4rem;
+        border: none;
+    }
+
+    
+    $estilo-fuente: 'Itim', cursive;
+    
+    
+    *{
+        font-family: $estilo-fuente;
+        font-size: 1.5rem;
+    }
+    
+    h3{
+        font-size: 3.4rem;
+        color: rgb(255, 255, 255);
+        font-weight: bolder;
+    }
+    
+    .Btn-carrusel{
+        @include container-botones();
+    }
+    
+    /*-----------SECTION TIPOS----------------------*/
+    @mixin tipos-img {
+        background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .tipos-container{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    .fondo-img{
+        @include tipos-img()
+    }
+
+    .section-title{
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        background: white;
+        z-index: 1;
+    }
+
+    .detras-tipos{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .linea{
+        height: 3px;
+        background: black;
+        width: 70%;
+        position: absolute;
+        z-index: 0;
+        margin-top: 1rem;
+    }
+}

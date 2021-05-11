@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media only screen and (max-width: 1200px) {
+    li {
+      list-style: none;
+    }
+    a {
+      text-decoration: none;
+    }
+    a:link {
+      color: #212121;
+    }
+    a:visited {
+      color: #212121;
+    }
+    
+    .menu-mobile {
+        display: flex;
+        align-items: center;
+        height: 55px;
+        padding:0 2em;
+        background-color: #ffffff;
+        box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+        width: 100%;
+        position: fixed;
+        overflow: hidden;
+        top: 0;
+        z-index: 9;
+    }
+
+    .container-nav{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+    }
+
+    .blanco{
+      color:rgb(0, 0, 0);
+    }
+
+    #menu{
+        height: 24px;
+    }
+
+    /*Numeros de wishlist y de productos en cesta*/
+    .num-container{
+        height: 15px;
+        width: 15px;
+        background:pink;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+        position: absolute;
+        margin-left: 1.5rem;
+    }
+
+    /*Esta clase se aplica para oscurecer toda la pantalla por debajo del nav*/
+    .oscurecer {
+        background-color: rgba(0, 0, 0, .3);
+        z-index: 99;
+        position: absolute;
+        height: 300vh;
+        width: 100%;
+        display: none;
+    }
+    nav {
+        z-index: 100;
+        width: 300px;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        background-color: white;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        transform: translate(-300px, 0);
+        transition: transform .3s ease;
+    }
+    /*Cuando se agrega esta clase el nav aparecerá*/
+    nav.open {
+        transform: translate(0, 0);
+    }
+    
+    /*Algo estilo a los item del menu*/
+    nav li {
+        padding: 1em;
+    }
+    nav li a {
+        text-align: center;
+        padding: 1em;
+        color: #424242;
+    }
+
+}
