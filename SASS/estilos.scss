@@ -28,7 +28,7 @@
         @include container-botones();
     }
     
-    /*-----------SECTION TIPOS----------------------*/
+    /*---------------SECTION TIPOS----------------------*/
     @mixin tipos-img {
         background-repeat: no-repeat;
       background-size: cover;
@@ -69,5 +69,54 @@
         position: absolute;
         z-index: 0;
         margin-top: 1rem;
+    }
+
+
+    /*-----------SECTION TIENDA-------------*/
+    .producto{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .produc-container{
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        margin-bottom: 2rem;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        padding: 1rem;
+    }
+
+    .Btn-produc{
+        padding: .5rem;
+        outline: none;
+        border: 1px solid black;
+        background:white;
+        font-weight: bolder;
+    }
+
+    .produc-img{
+        width: 100%;
+        height: 30vh;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+    }
+
+    .produc-mini{
+        width: 25%;
+        height: 40px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 100px;
+        border:1px solid black;
     }
 }
