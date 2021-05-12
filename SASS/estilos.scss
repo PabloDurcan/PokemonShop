@@ -28,6 +28,10 @@
         @include container-botones();
     }
     
+    li a{
+        font-size: 2.7rem;
+    }
+
     /*---------------SECTION TIPOS----------------------*/
     @mixin tipos-img {
         background-repeat: no-repeat;
@@ -53,6 +57,7 @@
         justify-content: center;
         background: white;
         z-index: 1;
+        margin: 2.5rem 0 2.5rem 0;
     }
 
     .detras-tipos{
@@ -117,6 +122,6 @@
         background-size: contain;
         background-repeat: no-repeat;
         border-radius: 100px;
-        border:1px solid black;
+        border:1px solid gray;
     }
 }
