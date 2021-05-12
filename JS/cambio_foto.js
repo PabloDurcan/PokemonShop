@@ -147,3 +147,85 @@ function chicorita(){
     function accion2(){imagenPrincipal.style.backgroundImage =Imgs[2];subImagenes[num3].style.border = "2px solid black";subImagenes[num2].style.border = "1px solid gray";subImagenes[num1].style.border = "1px solid gray";}
 }
 chicorita();
+
+function cindaquil(){
+    let  num1 = 21;
+   let  num2 = 22;
+   let  num3 = 23;
+    
+    let Imgs = ["url(Imgs/cindacuil.png)"," url(Imgs/quilava.png)"," url(Imgs/typlosion.png)"];
+    
+    let imagenPrincipal = document.querySelectorAll(".imagen-principal7")[0];
+    let subImagenes = document.querySelectorAll('[class *= "subImagen-"]');
+    
+    subImagenes[num1].addEventListener("click",accion0);
+    subImagenes[num2].addEventListener("click",accion1);
+    subImagenes[num3].addEventListener("click",accion2);
+    
+    subImagenes[num1].style.border = "2px solid black"
+
+    function accion0(){imagenPrincipal.style.backgroundImage =Imgs[0];subImagenes[num1].style.border = "2px solid black";subImagenes[num2].style.border = "1px solid gray";subImagenes[num3].style.border = "1px solid gray";}
+    function accion1(){imagenPrincipal.style.backgroundImage =Imgs[1];subImagenes[num2].style.border = "2px solid black";subImagenes[num1].style.border = "1px solid gray";subImagenes[num3].style.border = "1px solid gray";}
+    function accion2(){imagenPrincipal.style.backgroundImage =Imgs[2];subImagenes[num3].style.border = "2px solid black";subImagenes[num2].style.border = "1px solid gray";subImagenes[num1].style.border = "1px solid gray";}
+}
+cindaquil();
+
+function voltorb(){
+    let  num1 = 24;
+   let  num2 = 25;
+    
+    let Imgs = ["url(Imgs/voltorb.png)"," url(Imgs/electrode.png)"];
+    
+    let imagenPrincipal = document.querySelectorAll(".imagen-principal8")[0];
+    let subImagenes = document.querySelectorAll('[class *= "subImagen-"]');
+    
+    subImagenes[num1].addEventListener("click",accion0);
+    subImagenes[num2].addEventListener("click",accion1);
+    
+    subImagenes[num1].style.border = "2px solid black"
+
+    function accion0(){imagenPrincipal.style.backgroundImage =Imgs[0];subImagenes[num1].style.border = "2px solid black";subImagenes[num2].style.border = "1px solid gray";}
+    function accion1(){imagenPrincipal.style.backgroundImage =Imgs[1];subImagenes[num2].style.border = "2px solid black";subImagenes[num1].style.border = "1px solid gray";}
+}
+voltorb();
+
+function machop(){
+    let  num1 = 26;
+   let  num2 = 27;
+   let  num3 = 28;
+    
+    let Imgs = ["url(Imgs/machop.png)"," url(Imgs/machoke.png)"," url(Imgs/machamp.png)"];
+    
+    let imagenPrincipal = document.querySelectorAll(".imagen-principal9")[0];
+    let subImagenes = document.querySelectorAll('[class *= "subImagen-"]');
+    
+    subImagenes[num1].addEventListener("click",accion0);
+    subImagenes[num2].addEventListener("click",accion1);
+    subImagenes[num3].addEventListener("click",accion2);
+    
+    subImagenes[num1].style.border = "2px solid black"
+
+    function accion0(){imagenPrincipal.style.backgroundImage =Imgs[0];subImagenes[num1].style.border = "2px solid black";subImagenes[num2].style.border = "1px solid gray";subImagenes[num3].style.border = "1px solid gray";}
+    function accion1(){imagenPrincipal.style.backgroundImage =Imgs[1];subImagenes[num2].style.border = "2px solid black";subImagenes[num1].style.border = "1px solid gray";subImagenes[num3].style.border = "1px solid gray";}
+    function accion2(){imagenPrincipal.style.backgroundImage =Imgs[2];subImagenes[num3].style.border = "2px solid black";subImagenes[num2].style.border = "1px solid gray";subImagenes[num1].style.border = "1px solid gray";}
+}
+machop();
+
+function wailmer(){
+    let  num1 = 29;
+   let  num2 = 30;
+    
+    let Imgs = ["url(Imgs/wailmer.png)"," url(Imgs/wailord.png)"];
+    
+    let imagenPrincipal = document.querySelectorAll(".imagen-principal10")[0];
+    let subImagenes = document.querySelectorAll('[class *= "subImagen-"]');
+    
+    subImagenes[num1].addEventListener("click",accion0);
+    subImagenes[num2].addEventListener("click",accion1);
+    
+    subImagenes[num1].style.border = "2px solid black"
+
+    function accion0(){imagenPrincipal.style.backgroundImage =Imgs[0];subImagenes[num1].style.border = "2px solid black";subImagenes[num2].style.border = "1px solid gray";}
+    function accion1(){imagenPrincipal.style.backgroundImage =Imgs[1];subImagenes[num2].style.border = "2px solid black";subImagenes[num1].style.border = "1px solid gray";}
+}
+wailmer();
