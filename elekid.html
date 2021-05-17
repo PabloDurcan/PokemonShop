@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+      <link rel="stylesheet" href="CSS/4EEcompleto.css">
+      <link rel="stylesheet" href="CSS/nav.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      
+      
+      <!--ESTILOS Y SCRIPT PARA LA LIBREARIA SLICK Y JQUERY-->
+      <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="CSS/slider-productos.css">
+    </head>
+
+  <body>
+<!--Oscurecerá la pantalla por debajo de la navegación al abrirse-->
+<div class="oscurecer"></div>
+<!--Zona visible al usuario con ícono-->
+<div class="menu-mobile">
+    <a href="#" id="menu">
+      <i class="material-icons blanco">menu</i>
+    </a>
+    <i style="font-size:24px;margin-left: 1rem;" class="fa">&#xf2c0;</i>
+    <div class="container-nav">
+        <span class="blanco"><a href="index.html" style="display: inline-block;"><img src="Imgs/pokebola.png" alt=""></a></span>
+    </div>
+    
+        <div style="display:flex">
+            <i style="font-size:27px;margin-right: 1rem;" class="fa">&#xf004;</i>
+            <div class="num-container">
+                <span class="cont num-cart">0</span>
+            </div>
+        </div>
+    
+        <div style="display: flex;">
+            <i style="font-size:27px" class="fa">&#xf07a;</i>
+            <div class="num-container">
+                <span class="cont num-wish" id="precio-cesta">0</span>
+            </div>
+        </div>
+</div>
+ 
+<nav>
+  <li><a href="index.html">Inicio</a></li>
+  <li><a href="index.html">Tipos</a></li>
+  <li><a href="index.html">Tienda</a></li>
+</nav>
+
+    <div class='slider'>
+      <div style="background-image: url('Imgs/elekid.png'); "; class="layout"></div>
+      <div style="background-image: url('Imgs/electabuzz.png')"; class="layout"></div>
+      <div style="background-image: url('Imgs/electrivire.png');" class="layout"></div>
+    </div>
+    
+    <div class='slider-nav'>
+          <div class="slider-container">
+              <div style="background-image: url('Imgs/elekid.png')" class="layout mini"></div>
+              <div style="background-image: url('Imgs/electabuzz.png')" class="layout mini"></div>
+              <div style="background-image: url('Imgs/electrivire.png')" class="layout mini"></div>
+        </div>
+    </div>
+
+    <div class="wrapper-producto">
+        <h2>Elekid</h2>
+        <div class="valoracion-container">
+          <div class="valoracion-estrella" id="bulbaStar">
+          </div>
+          <p id='Bulba'>(0)</p>
+        </div>
+        <h2>Precio: <span id="precio-producto">8.99</span>€</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eligendi accusantium ipsum amet at, veritatis omnis consectetur sunt quisquam? Rem consequuntur minus nulla eos expedita consectetur. Sed fugit obcaecati optio!</p>
+        <h2>Cantidad: </h2>
+
+        <button class="Btn-cantidad" id="btn-menos">-</button>
+        <input type="number" min="1" value="1" id="input-cantidad">
+        <button class="Btn-cantidad" id="btn-mas">+</button>
+
+        <h4>Subtotal: <span id="precio-subtotal">8.99 €</span></h4>
+
+        <button class="Btn-carrito">AÑADIR AL CARRO</button>
+  
+      </div>
+
+<!--
+    <div class="wrapper">
+      <div class="producto">
+          <img src="Imgs/bulbasaur.png" alt="" class="producto1">
+          <div class="botones">
+              <button id="5estrellas" >5 estrellas</button>
+              <button id="4estrellas">4 estrellas </button>
+              <button id="3estrellas">3 estrellas </button>
+              <button id="2estrellas">2 estrellas</button>
+              <button id="1estrellas">1 estrellas</button>
+              <button id="0estrellas">0 estrellas</button>
+          </div>
+
+          <div class="valoraciones">
+              <p id="numero5"></p>
+              <p id="numero4"></p>
+              <p id="numero3"></p>
+              <p id="numero2"></p>
+              <p id="numero1"></p>
+              <p id="numero0"></p>
+              <br>
+              <p><a href="" id="total"></a></p>
+          </div>
+          
+          <div class="grafico">
+              <div class="valoracion cinco" id="graficoCinco" style="width:100%;"></div>
+              <div class="valoracion cuatro" id="graficoCuatro" style="width:100%;"></div>
+              <div class="valoracion tres" id="graficoTres" style="width:100%;"></div>
+              <div class="valoracion dos" id="graficoDos" style="width:100%;"></div>
+              <div class="valoracion uno" id="graficoUno" style="width:100%;"></div>
+              <div class="valoracion cero" id="graficoCero" style="width:100%;"></div>
+          </div>
+      </div>
+
+      <button id="imprimir">IMPRIMIR LOCALSTORAGE</button>
+
+      <button id="limpiar">LIMPIAR LOCALSTORAGE</button>
+
+      </div>
+    -->
+      <script src="JS/nav.js"></script>
+      <script src="JS/carrito-producto.js"></script>
+
+
+      <!-----SCRIPTS PARA EL CARRUSEL DE PRODUCTOS CON LA LIBRERIA SLICK------->
+      <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+      <script src="JS/slider.js"></script>
+  </body>
+  </html>
+</body>
+</html>

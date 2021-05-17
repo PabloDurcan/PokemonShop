@@ -75,15 +75,15 @@
           </div>
           <p id='Bulba'>(0)</p>
         </div>
-        <h2 id="precio-producto">5.99€</h2>
+        <h2>Precio: <span id="precio-producto">5.99</span>€</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eligendi accusantium ipsum amet at, veritatis omnis consectetur sunt quisquam? Rem consequuntur minus nulla eos expedita consectetur. Sed fugit obcaecati optio!</p>
         <h2>Cantidad: </h2>
 
-        <button class="Btn-cantidad">-</button>
-        <input type="number" min="1">
-        <button class="Btn-cantidad">+</button>
+        <button class="Btn-cantidad" id="btn-menos">-</button>
+        <input type="number" min="1" value="1" id="input-cantidad">
+        <button class="Btn-cantidad" id="btn-mas">+</button>
 
-        <h4>Subtotal: <span id=""></span></h4>
+        <h4>Subtotal: <span id="precio-subtotal">5.99 €</span></h4>
 
         <button class="Btn-carrito">AÑADIR AL CARRO</button>
   
@@ -130,12 +130,12 @@
       </div>
     -->
       <script src="JS/nav.js"></script>
+      <script src="JS/carrito-producto.js"></script>
 
 
       <!-----SCRIPTS PARA EL CARRUSEL DE PRODUCTOS CON LA LIBRERIA SLICK------->
       <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-      <script src="JS/slider.js">
-      </script>
+      <script src="JS/slider.js"></script>
   </body>
   </html>
 </body>
