@@ -18,6 +18,10 @@
       <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <link rel="stylesheet" href="CSS/slider-productos.css">
+
+      <!--LIBRERIA PUSHBARJS-->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.css">
+      
     </head>
 
   <body>
@@ -41,13 +45,46 @@
         </div>
     
         <div style="display: flex;">
-            <i style="font-size:27px" class="fa">&#xf07a;</i>
+            <button data-pushbar-target="mypushbar1" class="btn-carrito"><i style="font-size:27px" class="fa">&#xf07a;</i></button>
             <div class="num-container">
                 <span class="cont num-wish" id="precio-cesta">0</span>
             </div>
         </div>
 </div>
  
+
+<!--PUSHBAR CARRITO DE LA COMPRA-->
+<div data-pushbar-id="mypushbar1" data-pushbar-direction="right">
+  <div class="wrapper-carrito" id="cuerpo-cesta-vacio">
+    <button data-pushbar-close class="btn-carrito"><i class="fa">	&#xf00d;</i></button>
+    <h2>MI CARRITO</h2>
+    <hr>
+    <p>Tu carrito está vacío.</p>
+  </div>
+
+  <div class="wrapper-carrito" style="display: none;" id="cuerpo-cesta">
+    <button data-pushbar-close class="btn-carrito"><i class="fa">	&#xf00d;</i></button>
+    <h2>MI CARRITO</h2>
+    <hr>
+    <div class="produc-carrito-container item">
+      <div class="img-producto-carrito" style="background-image: url(Imgs/charmander.png);">
+
+      </div>
+      <div class="produc-desc-carrito">
+        <p>Charmander</p>
+        <p>5.99€</p>
+        <p>Cantidad: <span id="cantidad-cesta"></span></p>
+      </div>
+      <button class="btn-carrito" id="remove-carrito"><i class="fa">&#xf00d;</i></button>
+    </div>
+    <hr>
+    <div class="total-dis">
+      <p>Total: </p>
+      <p id="precio-subtotal-cesta">5.99 €</p>
+    </div>
+  </div>
+</div>
+
 <nav>
   <li><a href="index.html">Inicio</a></li>
   <li><a href="index.html">Tipos</a></li>
@@ -80,14 +117,22 @@
         <h2>Cantidad: </h2>
 
         <button class="Btn-cantidad" id="btn-menos">-</button>
-        <input type="number" min="1" value="1" id="input-cantidad">
+        <input type="number" min="1" value="1" id="input-cantidad" onkeyup="sacarTeclado()">
         <button class="Btn-cantidad" id="btn-mas">+</button>
 
         <h4>Subtotal: <span id="precio-subtotal">5.99 €</span></h4>
 
-        <button class="Btn-carrito">AÑADIR AL CARRO</button>
-  
+        <button class="Btn-carrito" data-pushbar-target="mypushbar1" id="add-carrito">AÑADIR AL CARRO</button>
+        
       </div>
+
+
+
+
+    
+          
+     
+    
 
 <!--
     <div class="wrapper">
@@ -136,6 +181,15 @@
       <!-----SCRIPTS PARA EL CARRUSEL DE PRODUCTOS CON LA LIBRERIA SLICK------->
       <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
       <script src="JS/slider.js"></script>
+
+
+      <script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script>
+      <script type="text/javascript">
+        const pushbar = new Pushbar({
+              blur:true,
+              overlay:true,
+            });
+      </script>
   </body>
   </html>
 </body>

@@ -17,7 +17,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="CSS/estilos.css">
 
-
+    <!--LIBRERIA PUSHBARJS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.css">
     
 </head>
 <body>
@@ -42,13 +43,24 @@
         </div>
     
         <div style="display: flex;">
-            <i style="font-size:27px" class="fa">&#xf07a;</i>
-            <div class="num-container">
-                <span class="cont num-wish">0</span>
-            </div>
-        </div>
+          <button data-pushbar-target="mypushbar1" class="btn-carrito"><i style="font-size:27px" class="fa">&#xf07a;</i></button>
+          <div class="num-container">
+              <span class="cont num-wish" id="precio-cesta">0</span>
+          </div>
+      </div>
 </div>
  
+
+<!--PUSHBAR CARRITO DE LA COMPRA-->
+<div data-pushbar-id="mypushbar1" data-pushbar-direction="right">
+  <div class="wrapper-carrito">
+    <button data-pushbar-close class="btn-carrito"><i class="fa">	&#xf00d;</i></button>
+    <h2>MI CARRITO</h2>
+    <hr>
+  </div>
+</div>
+
+
 <nav>
   <li><a href="#Inicio">Inicio</a></li>
   <li><a href="#Tipos">Tipos</a></li>
@@ -594,5 +606,14 @@
 <script src="JS/nav.js"></script>
 <script src="JS/cambio_foto.js"></script>
 <script src="JS/valorar-index.js"></script>
+
+<!--SCRIPT PARA PSHBARJS-->
+<script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script>
+      <script type="text/javascript">
+        const pushbar = new Pushbar({
+              blur:true,
+              overlay:true,
+            });
+      </script>
 </body>
 </html>

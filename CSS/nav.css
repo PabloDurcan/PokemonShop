@@ -63,6 +63,36 @@
         margin-left: 1.5rem;
     }
 
+
+    /*CARRITO DESPLEGABLE*/
+    .btn-carrito{
+        border: 0;
+        background:white;
+    }
+
+    .wrapper-carrito{
+        padding: 2rem;
+    }
+
+    .produc-carrito-container{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .img-producto-carrito{
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100px;
+        width: 35%;
+    }
+
+    .total-dis{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
     /*Esta clase se aplica para oscurecer toda la pantalla por debajo del nav*/
     .oscurecer {
         background-color: rgba(0, 0, 0, .3);

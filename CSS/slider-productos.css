@@ -75,7 +75,7 @@
         border: 1px solid gray;
     }
 
-    input{
+    #input-cantidad{
         padding: 0.45rem 1rem;
         text-align: center;
     }
