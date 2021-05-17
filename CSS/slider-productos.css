@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+
+@media only screen and (max-width: 1200px) {
+*{
+    font-family: "Itim", cursive;
+    font-size: 1.5rem;
+}
+  
+  /*Slider*/
+   .slider > div {
+    display:block; width:100%; padding: 50px 0;
+    text-align: center; font-size: 2em;
+}
+
+.slider{
+    margin-top: 55px;
+}
+
+.layout{
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 300px;
+  }
+
+  .mini{
+      height: 100px;
+  }
+  
+  /* Navigation */
+  .slider-nav { text-align: center; }
+  .slider-container > div {
+    display:inline-block;
+    width:75px; height: 100px; margin: 0 5px; padding: 3px 0;
+    text-align: center; font-size:2em;
+    cursor: pointer;
+  }
+
+  .slider-container{
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+  }
+
+  /*WRAPPER DE PRODUCTO*/
+  .valoracion-estrella {
+    background-image: url("../Imgs/0.5estrellas.png");
+    height: 30px;
+    width: 50%;
+    margin: 0.6rem 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; }
+
+  .valoracion-container {
+    display: flex;
+    width: 100%;
+    align-items: center; }
+
+    .wrapper-producto{
+        margin-left: 2rem;
+    }
+
+    h2{
+        margin: 1rem 0;
+    }
+
+    .Btn-cantidad{
+        padding: 0.5rem 1rem;
+        background: white;
+        border: 1px solid gray;
+    }
+
+    input{
+        padding: 0.45rem 1rem;
+        text-align: center;
+    }
+
+    .Btn-carrito{
+        background: black;
+        color: white;
+        border: 1px solid black;
+        padding: 1.3rem;
+        margin-top: 1rem;
+    }
+}

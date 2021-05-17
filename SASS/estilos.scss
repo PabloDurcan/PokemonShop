@@ -129,8 +129,8 @@
         background-image: url("../Imgs/0.5estrellas.png");
         height: 17px;
         width: 80%;
-        margin-top: 0rem;
-        @include tipos-img()
+        margin: 1.5rem 0;
+        @include tipos-img();
     }
 
     .valoracion-container{
