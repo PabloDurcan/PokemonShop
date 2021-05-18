@@ -38,7 +38,7 @@
     </div>
     
         <div style="display:flex">
-            <i style="font-size:27px;margin-right: 1rem;" class="fa">&#xf004;</i>
+            <button data-pushbar-target="mypushbar2" class="btn-carrito"><i style="font-size:27px;margin-right: 1rem;" class="fa">&#xf004;</i></button>
             <div class="num-container">
                 <span class="cont num-cart">0</span>
             </div>
@@ -53,13 +53,45 @@
 </div>
  
 
-<!--PUSHBAR CARRITO DE LA COMPRA-->
+<!-----------------------PUSHBAR CARRITO DE LA COMPRA---------------------------->
 <div data-pushbar-id="mypushbar1" data-pushbar-direction="right">
   <div class="wrapper-carrito" id="cuerpo-cesta-vacio">
     <button data-pushbar-close class="btn-carrito"><i class="fa">	&#xf00d;</i></button>
     <h2>MI CARRITO</h2>
     <hr>
     <p>Tu carrito está vacío.</p>
+  </div>
+
+  <div class="wrapper-carrito" style="display: none;" id="cuerpo-cesta">
+    <button data-pushbar-close class="btn-carrito"><i class="fa">	&#xf00d;</i></button>
+    <h2>MI CARRITO</h2>
+    <hr>
+    <div class="produc-carrito-container item">
+      <div class="img-producto-carrito" style="background-image: url(Imgs/bulbasaur.png);">
+
+      </div>
+      <div class="produc-desc-carrito">
+        <p>Bulbasur</p>
+        <p>5.99€</p>
+        <p>Cantidad: <span id="cantidad-cesta"></span></p>
+      </div>
+      <button class="btn-carrito" id="remove-carrito"><i class="fa">&#xf00d;</i></button>
+    </div>
+    <hr>
+    <div class="total-dis">
+      <p>Total: </p>
+      <p id="precio-subtotal-cesta">5.99 €</p>
+    </div>
+  </div>
+</div>
+
+<!--------------------------PUSHBAR LISTA DE DESEADOS--------------------------->
+<div data-pushbar-id="mypushbar2" data-pushbar-direction="right">
+  <div class="wrapper-carrito" id="cuerpo-cesta-vacio">
+    <button data-pushbar-close class="btn-carrito"><i class="fa">	&#xf00d;</i></button>
+    <h2>LISTA DE DESEADOS</h2>
+    <hr>
+    <p>Tu lista está vacía.</p>
   </div>
 
   <div class="wrapper-carrito" style="display: none;" id="cuerpo-cesta">
@@ -119,6 +151,8 @@
         <button class="Btn-cantidad" id="btn-menos">-</button>
         <input type="number" min="1" value="1" id="input-cantidad" onkeyup="sacarTeclado()">
         <button class="Btn-cantidad" id="btn-mas">+</button>
+        <button class="btn-carrito" id="add-wish" data-pushbar-target="mypushbar2"><i class="fa" style="font-size: 24px;">&#xf08a;</i></button>
+        
 
         <h4>Subtotal: <span id="precio-subtotal">5.99 €</span></h4>
 

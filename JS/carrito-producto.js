@@ -43,6 +43,5 @@ document.getElementById("remove-carrito").addEventListener("click",function(){
 
     document.getElementById("cuerpo-cesta").style.display = "none";
     document.getElementById("cuerpo-cesta-vacio").style.display = "";
-
 });
 

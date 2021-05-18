@@ -36,9 +36,9 @@
     </div>
     
         <div style="display:flex">
-            <i style="font-size:27px;margin-right: 1rem;" class="fa">&#xf004;</i>
+            <button data-pushbar-target="mypushbar2" class="btn-carrito"><i style="font-size:27px;margin-right: 1rem;" class="fa">&#xf004;</i></button>
             <div class="num-container">
-                <span class="cont num-cart">0</span>
+                <span class="cont num-cart" id="num-wish">0</span>
             </div>
         </div>
     
@@ -56,6 +56,75 @@
   <div class="wrapper-carrito">
     <button data-pushbar-close class="btn-carrito"><i class="fa">	&#xf00d;</i></button>
     <h2>MI CARRITO</h2>
+    <hr>
+  </div>
+</div>
+
+
+<!--------------------------PUSHBAR LISTA DE DESEADOS--------------------------->
+<div data-pushbar-id="mypushbar2" data-pushbar-direction="right">
+  <div class="wrapper-carrito" id="carrito-max">
+    <button data-pushbar-close class="btn-carrito"><i class="fa">	&#xf00d;</i></button>
+    <h2>LISTA DE DESEADOS</h2>
+    <hr>
+  </div>
+  <div class="wrapper-carrito" id="cuerpo-cesta-vacio">
+    <p>Tu lista está vacía.</p>
+  </div>
+
+  <div class="wrapper-carrito" style="display: none;" id="cuerpo-cesta-bulba">
+    <div class="produc-carrito-container item">
+      <div class="img-producto-carrito" style="background-image: url(Imgs/bulbasaur.png);" id="wish-img">
+
+      </div>
+      <div class="produc-desc-carrito">
+        <p id="nombre-wish">Bulbasur</p>
+        <p id="precio-wish">5.99 €</p>
+      </div>
+      <button class="btn-carrito" id="remove-carrito-bulba"><i class="fa">&#xf00d;</i></button>
+    </div>
+    <hr>
+  </div>
+
+  <div class="wrapper-carrito" style="display: none;" id="cuerpo-cesta-charm">
+    <div class="produc-carrito-container item">
+      <div class="img-producto-carrito" style="background-image: url(Imgs/charmander.png);" id="wish-img1">
+
+      </div>
+      <div class="produc-desc-carrito">
+        <p>Charmander</p>
+        <p>5.99€</p>
+      </div>
+      <button class="btn-carrito" id="remove-carrito-char"><i class="fa">&#xf00d;</i></button>
+    </div>
+    <hr>
+  </div>
+
+  <div class="produc" style="display: none;" id="cuerpo-cesta-squir">
+    <div class="produc-carrito-container item">
+      <div class="img-producto-carrito" style="background-image: url(Imgs/squirtle.png);" id="wish-img1">
+
+      </div>
+      <div class="produc-desc-carrito">
+        <p>Squirtle</p>
+        <p>5.99€</p>
+      </div>
+      <button class="btn-carrito" id="remove-carrito-squir"><i class="fa">&#xf00d;</i></button>
+    </div>
+    <hr>
+  </div>
+
+  <div class="wrapper-carrito" style="display: none;" id="cuerpo-cesta-luca">
+    <div class="produc-carrito-container item">
+      <div class="img-producto-carrito" style="background-image: url(Imgs/lucario.png);" id="wish-img1">
+
+      </div>
+      <div class="produc-desc-carrito">
+        <p>Lucario</p>
+        <p>10.99€</p>
+      </div>
+      <button class="btn-carrito" id="remove-carrito-luca"><i class="fa">&#xf00d;</i></button>
+    </div>
     <hr>
   </div>
 </div>
@@ -227,8 +296,8 @@
     <div class="produc-container">
         
         <div class="produc-img imagen-principal" style="background-image: url(Imgs/bulbasaur.png)"; id="img-prin"
-        ></div>
-      <a href="bulbasur.html"><button class="Btn-produc">BULBASUR</button></a>
+        ><button class="btn-carrito" id="add-wish-bulba" data-pushbar-target="mypushbar2"><i class="fa" style="font-size: 24px;" id="add-wish-bulba2">&#xf08a;</i></button></div>
+        <a href="bulbasur.html"><button class="Btn-produc">BULBASUR</button></a>
 
       <div class="valoracion-container">
         <div class="valoracion-estrella" id="bulbaStar">
@@ -256,7 +325,7 @@
 
     <div class="produc-container">
         <div class="produc-img imagen-principal1" style="background-image: url(Imgs/charmander.png)";
-        ></div>
+        ><button class="btn-carrito" id="add-wish-charm" data-pushbar-target="mypushbar2"><i class="fa" style="font-size: 24px;" id="add-wish-charm2">&#xf08a;</i></button></div>
       <a href="charmander.html"><button class="Btn-produc">CHARMANDER</button></a>
 
       <div class="valoracion-container">
@@ -281,7 +350,7 @@
     <div class="produc-container">
         
         <div class="produc-img imagen-principal2" style="background-image: url(Imgs/squirtle.png)";
-        ></div>
+        ><button class="btn-carrito" id="add-wish-squir" data-pushbar-target="mypushbar2"><i class="fa" style="font-size: 24px;" id="add-wish-squir2">&#xf08a;</i></button></div>
       <a href="squirtle.html"><button class="Btn-produc">SQUIRTLE</button></a>
 
       <div class="valoracion-container">
@@ -309,7 +378,7 @@
     <div class="produc-container">
         
       <div class="produc-img" style="background-image: url(Imgs/lucario.png)";
-      ></div>
+      ><button class="btn-carrito" id="add-wish-luca" data-pushbar-target="mypushbar2"><i class="fa" style="font-size: 24px;" id="add-wish-luca2">&#xf08a;</i></button></div>
     <a href="lucario.html"><button class="Btn-produc">LUCARIO</button></a>
 
     <div class="valoracion-container">
@@ -606,6 +675,7 @@
 <script src="JS/nav.js"></script>
 <script src="JS/cambio_foto.js"></script>
 <script src="JS/valorar-index.js"></script>
+<script src="JS/deseados-producto.js"></script>
 
 <!--SCRIPT PARA PSHBARJS-->
 <script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script>
